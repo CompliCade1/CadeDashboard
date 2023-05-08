@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Monitoring Website-Home</title>
+<title>Monitoring Website-Contact</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="wrapper">
+    
 <?php include 'navbar.php';?>
+    
 <div class="header">
-<h1>Dashboard Home Page</h1>
+<h1>Contact Page</h1>
     <p>A website created by me.</p>
 </div>
 <div class="row">
@@ -25,8 +26,7 @@
     <p>This website can be used by you to keep track of how much power and water you are using up in your buidling. With this knowledge you would be able to make changes to your building to make it more energy and water efficient. (This is a description of this website)</p>
 </div>
 <div class="footer">
-    <?php include 'footer.php';?>
-</div>
+    <a href="#">Contact Link</a>
 </div>
 </body>
 </html>
