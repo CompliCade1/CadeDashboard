@@ -14,11 +14,11 @@
 </div>
 <div class="row">
     <div class="side">
-        <p>This is me for now, might add a picture of myself.</p>
+        <p>This is me for now, might add a picture of me.<br>You can contact me thorugh my gmail,<br>cade20247@student.trident.school.nz</p>
     </div>
     <div class="main">
         <a target="_blank" href="chick.jpeg">
-    <img src="images/chick.jpeg" alt="Cinque Terre" width="300" height="300">
+    <img src="images/chick.jpeg" alt="Cinque Terre" width="200" height="200">
   </a>
     </div>
 </div>
