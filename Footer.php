@@ -1,3 +1,3 @@
 <?php
-echo "<p>Copyright &copy; 2022-" . date("Y") . " CadeDashboard</p>";
+echo "<p>Copyright &copy; 2022-" . date("Y") . " Trident High School</p>";
 ?>

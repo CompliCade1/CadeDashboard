@@ -26,7 +26,7 @@ div.desc {
   text-align: center;
 }
 </style>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="wrapper">

@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 </head>
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 <body>
 <div class="wrapper">
 <?php include 'navbar.php';?>

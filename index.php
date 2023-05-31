@@ -4,7 +4,7 @@
 <title>Monitoring Website-Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="wrapper">
@@ -18,7 +18,7 @@
         <p>This is a description of Graph Image</p>
     </div>
     <div class="main">
-        <div class="fakeimg"style="height:60px;">Graph Image</div>
+        <div><img src="images/graphimage4.png" width="200" height="150"></div>
     </div>
 </div>
 <div class="end">

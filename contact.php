@@ -4,7 +4,7 @@
 <title>Monitoring Website-Contact</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="wrapper">

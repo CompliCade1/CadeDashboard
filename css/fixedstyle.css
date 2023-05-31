@@ -9,7 +9,7 @@ body {
     background-color: #f1f1f1;
 }
 .wrapper{
-    width: 80%;
+    width: 70%;
     margin:auto;
     clear: both;
     overflow: hidden;
@@ -17,7 +17,7 @@ body {
 .header {
     padding: 40px;
     text-align: center;
-    background-color: #eb0df4;
+    background-color: #0dd9f4;
     color:white;
     }
 
@@ -56,12 +56,12 @@ body {
   flex-wrap: wrap;
 }
 .side {
-  flex: 30%;
+  flex: 60%;
   background-color: #f1f1f1;
   padding: 20px;
 }
 .main {   
-  flex: 70%;
+  flex: 40%;
   background-color: #f1f1f1;
   padding: 20px;
 }
