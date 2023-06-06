@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Monitoring Website-Dashboard</title>
+<title>Sustainability - Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 </head>
@@ -10,15 +10,14 @@
 <div class="wrapper">
 <?php include 'navbar.php';?>
 <div class="header">
-<h1>Dashboard-Trident High School</h1>
-    <p>A website created by me.</p>
+<h1>Sustainability - Dashboard</h1>
 </div>
 <div class="row">
     <div class="side">
-        <p>This is a description of Graph Image</p>
+        <div class="fakeimg"style="height:60px;">Graph One</div>
     </div>
     <div class="main">
-        <div class="fakeimg"style="height:60px;">Graph Image</div>
+        <div class="fakeimg"style="height:60px;">Graph Two</div>
     </div>
 </div>
 <div class="end">
