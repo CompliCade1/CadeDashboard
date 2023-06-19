@@ -33,44 +33,43 @@ div.desc {
 <?php include 'navbar.php';?>
 <div class="header">
 <h1>Dashboard Gallery Page</h1>
-    <p>A website created by me.</p>
 </div>
 <div class="row">
     <div class="side">
-        <p>These are graphs if you could not see, but if you can't see then you can't read this, oh well.</p>
+        <p>These are the graphs if you could not see, but if you can't see then you can't read this, oh well.</p>
     </div>
-    <div class="main">
-        <div class="gallery">
-  <a target="_blank" href="graphimage1.png">
-    <img src="images/graphimage1.png" alt="Bar Graph" width="600" height="400">
+<div class="row">
+    <div class="gallery">
+  <a target="_blank" href="power.php">
+    <img src="images/webgraph.png" alt="Bar Graph" width="600" height="400">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Click to go to Electricity Usage of Trident High School</div>
 </div>
     <div class="gallery">
-  <a target="_blank" href="graphimage2.png">
+  <a target="_blank" href="water.php">
     <img src="images/graphimage2.png" alt="Line Graph" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
         <div class="gallery">
-  <a target="_blank" href="graphimage3.png">
-    <img src="images/graphimage3.png" alt="Bar Graph" width="600" height="400">
+  <a target="_blank" href="images/graphimage3.png">
+    <img src="images/graphimage1.png" alt="Bar Graph" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
         <div class="gallery">
-  <a target="_blank" href="graphimage4.png">
+  <a target="_blank" href="images/graphimage4.png">
     <img src="images/graphimage4.png" alt="Bar Graph" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
         <div class="gallery">
-  <a target="_blank" href="graphimage5.png">
+  <a target="_blank" href="images/graphimage5.png">
     <img src="images/graphimage5.png" alt="Line Graph" width="600" height="400">
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
-    </div>
+</div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>

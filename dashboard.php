@@ -14,10 +14,10 @@
 </div>
 <div class="row">
     <div class="side">
-        <div class="fakeimg"style="height:60px;">Graph One</div>
+        <div class="fakeimg"style="height:60px;">Electricity Usage Graph</div>
     </div>
     <div class="main">
-        <div class="fakeimg"style="height:60px;">Graph Two</div>
+        <div class="fakeimg"style="height:60px;">Water Usage Graph</div>
     </div>
 </div>
 <div class="end">
