@@ -6,13 +6,13 @@
 
             <?php
             $id = 1;//$_SESSION['id'];
-            $sql = "SELECT reading, kW FROM electricitydata WHERE user_id = $id";
+            $sql = "SELECT reading, kWh FROM electricitydata WHERE user_id = $id";
 //print $sql;
             $result = mysqli_query($conn, $sql);
                 foreach ($result as $row) {
                     $reading_value[] = [
-                        'x' => $row["reading"],
-                        'y' => $row["kW"]
+                        'x' => $row["date"],
+                        'y' => $row["kWh"]
                     ];
                 }
     //print_r($reading_value);
