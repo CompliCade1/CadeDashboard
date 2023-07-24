@@ -4,7 +4,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
 }
 .wrapper{
     width: 80%;
@@ -55,21 +55,21 @@ body {
 }
 .side {
   flex: 40%;
-  background-color: #f1f1f1;
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 5px;
 }
 .main {   
   flex: 40%;
-  background-color: #f1f1f1;
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 5px;
 }
 .fakeimg {
   background-color: #aaa;
-  width: 90%;
+  width: 100%;
   padding: 10px;
 }
 .end {
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     text-align: center;
     width: 100%;
 }

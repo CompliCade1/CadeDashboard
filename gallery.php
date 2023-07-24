@@ -10,6 +10,7 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 180px;
+  flex:30%;
 }
 
 div.gallery img:hover {
@@ -24,7 +25,7 @@ div.gallery img {
 div.desc {
   padding: 10px;
   text-align: center;
-    font-size:60%
+    font-size:80%
 }
 </style>
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
@@ -53,25 +54,25 @@ div.desc {
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
     <img src="images/trinabess.png" alt="Trinabess" width="600" height="400">
   </a>
-  <div class="desc">Trinabess<br>Username:TridentHighAUDS<br>Password: qr16F</div>
+  <div class="desc">Trinabess (Solar Power Generation)<br>Username:TridentHighAUDS<br>Password: qr16F</div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
     <img src="images/trinabess2.png" alt="Trinabess" width="600" height="400">
   </a>
-  <div class="desc">Trinabess<br>Username:TridentHighAUDN<br>Password: qr16F</div>
+  <div class="desc">Trinabess (Solar Power Generation)<br>Username:TridentHighAUDN<br>Password: qr16F</div>
 </div>
         <div class="gallery">
   <a target="_blank" href="https://www.apsystemsema.com/ema/index.action?locale=en_US">
     <img src="images/apsystems.png" alt="Apsystems" width="600" height="400">
   </a>
-  <div class="desc">Apsystems<br>Username: Trident High AUDITORIUM<br>Password: Trident2016</div>
+  <div class="desc">Apsystems (Solar Power Generation)<br>Username: Trident High AUDITORIUM<br>Password: Trident2016</div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://172.16.8.254/">
     <img src="images/accontrol.png" alt="Line Graph" width="600" height="400">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">You need your own password and username for the ac controller</div>
 </div>
 </div>
 <div class="footer">
