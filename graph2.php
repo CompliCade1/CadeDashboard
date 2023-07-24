@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php  ini_set('display_errors', 1);
+error_reporting(~0); ?> 
 <html lang="en">
 <head>
 <title>Monitoring Website-Contact</title>
@@ -23,7 +25,7 @@
             <?php
             $id = 1;//$_SESSION['id'];
             $sql = "SELECT date, kWh FROM electricitydata ";
-//print $sql;
+print $sql;
             $result = mysqli_query($conn, $sql);
                 foreach ($result as $row) {
                     $reading_value[] = [

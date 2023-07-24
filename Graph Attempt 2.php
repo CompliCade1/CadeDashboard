@@ -1,4 +1,6 @@
- <div class="main"> 
+<?php  ini_set('display_errors', 1);
+error_reporting(~0); ?> 
+<div class="main"> 
             <?php
             session_start();
             require_once('setup.php');
@@ -6,7 +8,7 @@
 
             <?php
             $id = 1;//$_SESSION['id'];
-            $sql = "SELECT reading, kWh FROM electricitydata WHERE user_id = $id";
+            $sql = "SELECT kWh, kWh FROM electricitydata WHERE id = $id";
 //print $sql;
             $result = mysqli_query($conn, $sql);
                 foreach ($result as $row) {

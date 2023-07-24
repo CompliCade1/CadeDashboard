@@ -1,3 +1,5 @@
+<?php  ini_set('display_errors', 1);
+error_reporting(~0); ?>
 <html>
 <body>
     <?php print_r($_POST); ?>
@@ -9,11 +11,11 @@ $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 
 $email = $_POST['email'];
-$messages = $_POST['message'];
+$comment = $_POST['comment'];
 
 include "setup.php";
 $sql = "INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES (NULL, '$fname', '$lname', '$email', '$comment')";
-    print $sql;
+print $sql;
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
 } else {
