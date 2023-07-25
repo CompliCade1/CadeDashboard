@@ -13,9 +13,6 @@
 <h1>Contact Page</h1>
 </div>
 <div class="row">
-    <div class="side">
-        <p>This is me for now, might add a picture of me.<br>You can contact me thorugh my gmail,<br>cade20247@student.trident.school.nz</p>
-    </div>
     <div class="main">
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>

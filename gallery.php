@@ -6,13 +6,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=a">
 <style>
 div.gallery {
-  margin: 5px;
+  margin: 8px;
   border: 1px solid #ccc;
   float: left;
   width: 180px;
   flex:30%;
 }
-
+div.header {
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 4px;
+    border-color: #FFFFFF
+    }
 div.gallery img:hover {
   border: 1px solid #777;
 }
@@ -31,7 +38,6 @@ div.desc {
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="wrapper">
 <?php include 'navbar.php';?>
 <div class="header">
 <h1>Dashboard Gallery Page</h1>
@@ -54,13 +60,13 @@ div.desc {
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
     <img src="images/trinabess.png" alt="Trinabess" width="600" height="400">
   </a>
-  <div class="desc">Trinabess (Solar Power Generation)<br>Username:TridentHighAUDS<br>Password: qr16F</div>
+  <div class="desc">Trinabess (South Solar Power Generation)<br>Username:TridentHighAUDS<br>Password: qr16F</div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
     <img src="images/trinabess2.png" alt="Trinabess" width="600" height="400">
   </a>
-  <div class="desc">Trinabess (Solar Power Generation)<br>Username:TridentHighAUDN<br>Password: qr16F</div>
+  <div class="desc">Trinabess (North Solar Power Generation)<br>Username:TridentHighAUDN<br>Password: qr16F</div>
 </div>
         <div class="gallery">
   <a target="_blank" href="https://www.apsystemsema.com/ema/index.action?locale=en_US">
@@ -72,12 +78,11 @@ div.desc {
   <a target="_blank" href="http://172.16.8.254/">
     <img src="images/accontrol.png" alt="Line Graph" width="600" height="400">
   </a>
-  <div class="desc">You need your own password and username for the ac controller</div>
+  <div class="desc">Trident AC Controller<br>Username:Use yours<br>Password:Use yours</div>
 </div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>
-</div>
 </div>
 </body>
 </html>
