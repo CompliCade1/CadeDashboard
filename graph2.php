@@ -21,11 +21,10 @@ error_reporting(~0); ?>
             session_start();
             require_once('setup.php');
             ?>
-
             <?php
             $id = 1;//$_SESSION['id'];
-            $sql = "SELECT date, kWh FROM electricitydata ";
-print $sql;
+            $sql = "SELECT date, kWh FROM electricitydata";
+//print $sql;
             $result = mysqli_query($conn, $sql);
                 foreach ($result as $row) {
                     $reading_value[] = [
@@ -34,15 +33,11 @@ print $sql;
                     ];
                 }
     //print_r($reading_value);
-
             ?>
-
-
             <div style="width: 50%;" class="diagram_div">
                 <canvas id="myChart"></canvas>
             </div>
             <!--todo=============== script ===============-->
-
             <script>
             const data = {
                 datasets: [{
@@ -53,7 +48,6 @@ print $sql;
                     borderWidth: 1,
                 }]
             };
-                
                 var chartEl = document.getElementById("myChart");
                 chartEl.height = 100;
                 chartEl.width = 300;
@@ -62,7 +56,6 @@ print $sql;
                     data: data,
                     options: {
                         plugins: {
-
                             title: {
                                 display: true,
                                 text: 'Electricity Usage:'
@@ -75,8 +68,6 @@ print $sql;
                     }
                 };
             </script>
-           
-
  <script>
                 const myChart = new Chart(
                     document.getElementById('myChart'),

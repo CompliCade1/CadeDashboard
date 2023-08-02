@@ -17,7 +17,7 @@ include "setup.php";
 $sql = "INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES (NULL, '$fname', '$lname', '$email', '$comment')";
 print $sql;
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  header('Location: contact.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
