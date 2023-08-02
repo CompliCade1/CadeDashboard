@@ -24,7 +24,7 @@ body {
     }
 .navbar {
     overflow:hidden;
-    background-color: #333
+    background-color: #333 
 }
 .navbar p {
     float:left;
@@ -52,26 +52,32 @@ body {
 .row {  
   display: flex;
   flex-wrap: wrap;
+  background-color: #f2f2f2;
 }
 .side {
   flex: 40%;
-  background-color: #ffffff;
   padding: 5px;
 }
 .main {   
   flex: 40%;
-  background-color: #ffffff;
-  padding: 5px;
+  padding: 5px; 
+}
+.main img {
+    width:100%
+    height:auto
 }
 .fakeimg {
   background-color: #aaa;
-  width: 100%;
+  width: 60%;
   padding: 10px;
 }
 .end {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     text-align: center;
     width: 100%;
+}
+.end p{
+    margin: 0;
 }
 .footer {
     padding:20px;

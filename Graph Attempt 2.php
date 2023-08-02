@@ -8,7 +8,8 @@ error_reporting(~0); ?>
 
             <?php
             $id = 1;//$_SESSION['id'];
-            $sql = "SELECT kWh, kWh FROM electricitydata WHERE id = $id";
+            $sql = "SELECT date, kWh FROM electricitydata WHERE 
+            id = $id";
 //print $sql;
             $result = mysqli_query($conn, $sql);
                 foreach ($result as $row) {
@@ -53,7 +54,7 @@ error_reporting(~0); ?>
                             },
                             legend: {
                                 display: true,
-                                position: 'bottom'
+                                position: 'Date'
                             }
                         }
                     }

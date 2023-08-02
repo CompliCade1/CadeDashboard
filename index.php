@@ -14,14 +14,14 @@
 </div>
 <div class="row">
     <div class="side">
-        <p>This is a responsive graph showing electricity usage</p>
+        <p>This is an example</p>
     </div>
     <div class="main">
-        <div><img src="images/graphimage4.png" width="200" height="150"></div>
+        <div><img src="images/examplelinks.png" width="450" height="240"></div>
     </div>
 </div>
 <div class="end">
-    <p>Words and more Words about Trident High School's sustainability progress</p>
+<p>...</p>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>

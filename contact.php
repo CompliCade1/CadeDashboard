@@ -45,6 +45,9 @@ echo $gender;
 ?>
 
     </div>
+    <div class = "side">
+        <p>You can contact me through me email cade20247@student.trident.school.nz if there is an issue with the website.</p>
+    </div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>
