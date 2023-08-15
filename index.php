@@ -5,6 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
+<?php 
+require_once 'setup.php';
+$sql = "SELECT * FROM pages where id = 1";
+$result = mysqli_query($conn, $sql);
+if (mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    $title1 = $row['title1'];
+    $text1 = $row['text1'];
+    $img1 = $row['img1'];
+}
+    ?>
 </head>
 <body>
 <div class="wrapper">
@@ -14,10 +25,11 @@
 </div>
 <div class="row">
     <div class="side">
-        <p>This is an example</p>
+        <p><img src = "images/<?php print $img1; ?>"></p>
     </div>
     <div class="main">
-        <div><img src="images/examplelinks.png" width="450" height="240"></div>
+        <h2><?php print $title1; ?></h2>
+        <p><?php print $text1; ?></p>
     </div>
 </div>
 <div class="end">

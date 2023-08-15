@@ -42,7 +42,7 @@ error_reporting(~0); ?>
             const data = {
                 datasets: [{
                     label: 'Time',
-                    backgroundColor: '#20e0307a',
+                    backgroundColor: FFFFFF,
                     borderColor: '#04aa1a',
                     data: <?= json_encode($reading_value) ?>,
                     borderWidth: 1,

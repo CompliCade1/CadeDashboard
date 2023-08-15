@@ -23,6 +23,12 @@
     </style>
 </head>
 <body>
+<div class="wrapper">
+<?php include 'navbar.php';?>  
+<div class="header">
+<h1>Contact Page</h1>
+</div>
+<div>
 <?php  require_once 'setup.php';
 $sql = "SELECT * FROM contacts";
 $result = mysqli_query($conn, $sql);
@@ -49,10 +55,6 @@ $result = mysqli_stmt_get_result($stmt);
 mysqli_stmt_close($stmt);
 mysqli_close($conn);
 ?>
-<div class="wrapper">
-<?php include 'navbar.php';?>  
-<div class="header">
-<h1>Contact Page</h1>
 </div>
 <div class="row">
 </div>

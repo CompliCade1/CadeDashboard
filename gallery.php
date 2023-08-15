@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Monitoring Website-Gallery</title>
+<title>Monitoring Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 <style>
@@ -75,12 +75,6 @@ div.desc {
     <img src="images/apsystems.png" alt="Apsystems" width="600" height="400">
   </a>
             <div class="desc"><b>Apsystems (Solar Power Generation)<br>Username: Trident High AUDITORIUM<br>Password: Trident2016</b></div>
-</div>
-        <div class="gallery">
-  <a target="_blank" href="http://172.16.8.254/">
-    <img src="images/accontrol.png" alt="Line Graph" width="600" height="400">
-  </a>
-            <div class="desc"><b>Trident AC Controller<br>Username:Use yours<br>Password:Use yours</b></div>
 </div>
 </div>
 <div class="footer">

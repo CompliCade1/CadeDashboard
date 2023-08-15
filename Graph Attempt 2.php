@@ -5,6 +5,7 @@ ini_set('log_errors', '0');
 ini_set('error_log', './');
 //error_reporting(~0); 
 ?> 
+<script src="path/to/chartjs/dist/chart.umd.js"></script>
 <div class="main"> 
             <?php
             session_start();
@@ -48,11 +49,11 @@ ini_set('error_log', './');
                         plugins: {
                             title: {
                                 display: true,
-                                text: 'Electricity Usage:'
+                                text: 'Electricity Usage:',
                             },
                             legend: {
                                 display: true,
-                                position: 'Date'
+                                position: 'Date',
                             }
                         }
                     }

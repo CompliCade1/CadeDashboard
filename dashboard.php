@@ -14,10 +14,10 @@
 </div>
 <div class="row">
     <div class="side">
-        <div class="fakeimg"style="height:60px;">Electricity Usage Graph</div>
+        <img src="images/goodwe.png" alt="Goodwe">
     </div>
     <div class="main">
-        <div class="fakeimg"style="height:60px;">Water Usage Graph</div>
+        <img src="images/graphimage3.png" alt="ESP.nz">
     </div>
 </div>
 <div class="end">

@@ -63,12 +63,14 @@ body {
   padding: 5px; 
 }
 .main img {
-    width:100%
-    height:auto
+    width:100%;
+}
+.side img {
+    width:100%;
 }
 .fakeimg {
   background-color: #aaa;
-  width: 60%;
+  width: 90%;
   padding: 10px;
 }
 .end {
