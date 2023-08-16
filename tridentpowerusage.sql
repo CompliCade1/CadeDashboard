@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 26, 2023 at 12:13 AM
+-- Generation Time: Aug 16, 2023 at 02:22 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -41,7 +41,14 @@ CREATE TABLE `contacts` (
 
 INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES
 (1, 'Cade', 'Lopez', 'Cade20247@student.trident.nz', 'comment'),
-(3, 'Cade', 'Patrick', 'eee@mail.com', 'commmmmmmmment');
+(7, 'Cade', 'name', 'email', 'cacafa'),
+(8, '', '', '', ''),
+(9, '', '', '', ''),
+(10, '', '', '', ''),
+(11, '', '', '', ''),
+(12, 'Jenny', 'Patrick', 'jenny@mail.com', 'this is a test'),
+(13, '', '', '', ''),
+(14, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -241,6 +248,39 @@ INSERT INTO `electricitydata` (`id`, `date`, `kWh`) VALUES
 (179, '2023-04-30', 251),
 (180, '2023-05-01', 569);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `links`
+--
+
+CREATE TABLE `links` (
+  `id` int(11) NOT NULL,
+  `link` varchar(100) NOT NULL,
+  `img` blob NOT NULL,
+  `description` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pages`
+--
+
+CREATE TABLE `pages` (
+  `id` int(11) NOT NULL,
+  `title1` varchar(100) NOT NULL,
+  `text1` text NOT NULL,
+  `img1` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `title1`, `text1`, `img1`) VALUES
+(1, 'welcome to this dashboard', 'here you can find info about Trident’s power usage', 'graphimage3.png');
+
 --
 -- Indexes for dumped tables
 --
@@ -258,6 +298,18 @@ ALTER TABLE `electricitydata`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `links`
+--
+ALTER TABLE `links`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pages`
+--
+ALTER TABLE `pages`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -265,13 +317,25 @@ ALTER TABLE `electricitydata`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `electricitydata`
 --
 ALTER TABLE `electricitydata`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=181;
+
+--
+-- AUTO_INCREMENT for table `links`
+--
+ALTER TABLE `links`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `pages`
+--
+ALTER TABLE `pages`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
