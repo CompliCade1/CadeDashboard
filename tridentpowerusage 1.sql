@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 16, 2023 at 02:22 AM
+-- Generation Time: Aug 20, 2023 at 11:20 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -42,13 +42,9 @@ CREATE TABLE `contacts` (
 INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES
 (1, 'Cade', 'Lopez', 'Cade20247@student.trident.nz', 'comment'),
 (7, 'Cade', 'name', 'email', 'cacafa'),
-(8, '', '', '', ''),
-(9, '', '', '', ''),
-(10, '', '', '', ''),
-(11, '', '', '', ''),
 (12, 'Jenny', 'Patrick', 'jenny@mail.com', 'this is a test'),
-(13, '', '', '', ''),
-(14, '', '', '', '');
+(15, '', '', '', ''),
+(16, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -317,7 +313,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `electricitydata`
