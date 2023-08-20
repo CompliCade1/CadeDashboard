@@ -23,7 +23,7 @@ ini_set('error_log', './');
                         'y' => $row["kWh"]
                     ];
                 }
-    //print_r($reading_value);
+    print_r($reading_value);
             ?>
             <div style="width: 50%;" class="diagram_div">
                 <canvas id="myChart"></canvas>
@@ -43,7 +43,7 @@ ini_set('error_log', './');
                 chartEl.height = 100;
                 chartEl.width = 300;
                 const config = {
-                    type: 'line',
+                    type: 'bar',
                     data: data,
                     options: {
                         plugins: {

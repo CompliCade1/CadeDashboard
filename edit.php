@@ -1,16 +1,3 @@
- <?php  
-require_once 'setup.php';
-if(isset($_GET['id'])) {
-    $id = $_GET['id'];
-    $query = "SELECT * FROM contacts WHERE id = ?";
-    $stmt = mysqli_prepare($conn, $query);
-    mysqli_stmt_bind_param($stmt, "i", $id);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
-    if(mysqli_num_rows($result) === 1) {
-        $row = mysqli_fetch_assoc($result);
-        // Display the edit form with the existing record's data
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +12,19 @@ if(isset($_GET['id'])) {
 <div class="header">
 <h1>Contact Page</h1>
 </div>
+<?php  
+require_once 'setup.php';
+if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $query = "SELECT * FROM contacts WHERE id = ?";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "i", $id);
+    mysqli_stmt_execute($stmt);
+    $result = mysqli_stmt_get_result($stmt);
+    if(mysqli_num_rows($result) === 1) {
+        $row = mysqli_fetch_assoc($result);
+        // Display the edit form with the existing record's data
+?>
 <div class="row">
 </div>
 <div class="footer">
@@ -34,12 +34,14 @@ if(isset($_GET['id'])) {
 </body>
 </html>
 <?php
-}else {
+}
+else {
 echo 'No record found with the provided ID.';
 }
  // Close the statement
     mysqli_stmt_close($stmt);
-} else {
+} 
+else {
     echo 'ID parameter not provided.';
 }// Close the database connection
 mysqli_close($conn);

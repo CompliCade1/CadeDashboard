@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
+<style>
+</style>
 </head>
 <body>
 <div class="wrapper">
@@ -14,7 +16,7 @@
 </div>
 <div class="row">
     <div class="main">
-<h2>PHP Form Validation Example</h2>
+<h2>Contact Me Form</h2>
 <p><span class="error">* required field</span></p>
 <form method="post" action="actionpage.php">  
   First Name: <input type="text" name="fname" value="<?php echo $fname;?>">
@@ -30,7 +32,6 @@
   <br><br>
   <input type="submit" name="submit" value="Submit">  
 </form>
-
 <?php
 echo "<h2>Your Input:</h2>";
 echo $name;
@@ -43,10 +44,9 @@ echo $comment;
 echo "<br>";
 echo $gender;
 ?>
-
     </div>
     <div class = "side">
-        <p>You can contact me through me email cade20247@student.trident.school.nz if there is an issue with the website.</p>
+        <p>You can also contact me through me email cade20247@student.trident.school.nz if there is an issue with the website.</p>
     </div>
 </div>
 <div class="footer">
