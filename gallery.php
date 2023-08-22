@@ -50,31 +50,31 @@ div.desc {
     <img src="images/esp.nz.png" alt="ESP.nz" width="600" height="400">
   </a>
   <div class="desc"><b>
-      ESP.nz (Electricity + Water Usage)<br>Username:dobbind@trident.school.nz<br>Password:Dd202002</b></div>
+      ESP.nz (Electricity + Water Usage)</b></div>
 </div>
     <div class="gallery">
   <a target="_blank" href="https://www.semsportal.com/home/login">
     <img src="images/goodwe.png" alt="Goodwe" width="600" height="400">
   </a>
-        <div class="desc"><b>Goodwe (Solar Power Generation)<br>Username:dobbind@trident.school.nz<br>Password:Trident2015</b></div>
+        <div class="desc"><b>Goodwe (Solar Power Generation)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
     <img src="images/trinabess.png" alt="Trinabess" width="600" height="400">
   </a>
-            <div class="desc"><b>Trinabess (South Solar Power Generation)<br>Username:TridentHighAUDS<br>Password: qr16F</b></div>
+            <div class="desc"><b>Trinabess (South Solar Power Generation)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
     <img src="images/trinabess2.png" alt="Trinabess" width="600" height="400">
   </a>
-            <div class="desc"><b>Trinabess (North Solar Power Generation)<br>Username:TridentHighAUDN<br>Password: qr16F</b></div>
+            <div class="desc"><b>Trinabess (North Solar Power Generation)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href="https://www.apsystemsema.com/ema/index.action?locale=en_US">
     <img src="images/apsystems.png" alt="Apsystems" width="600" height="400">
   </a>
-            <div class="desc"><b>Apsystems (Solar Power Generation)<br>Username: Trident High AUDITORIUM<br>Password: Trident2016</b></div>
+            <div class="desc"><b>Apsystems (Solar Power Generation)</b></div>
 </div>
 </div>
 <div class="footer">

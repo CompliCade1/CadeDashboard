@@ -23,19 +23,21 @@ ini_set('error_log', './');
                         'y' => $row["kWh"]
                     ];
                 }
-    print_r($reading_value);
+    //print_r($reading_value);
             ?>
             <div style="width: 50%;" class="diagram_div">
                 <canvas id="myChart"></canvas>
             </div>
             <!--todo=============== script ===============-->
             <script>
+            const labels = [1,2,3,4,5]
             const data = {
+                labels: labels,
                 datasets: [{
                     label: 'Time',
                     backgroundColor: '#20e0307a',
                     borderColor: '#04aa1a',
-                    data: <?= json_encode($reading_value) ?>,
+                    data: [1,4,2,6,8]<?//= json_encode($reading_value) ?>,
                     borderWidth: 1,
                 }]
             };   
@@ -43,7 +45,7 @@ ini_set('error_log', './');
                 chartEl.height = 100;
                 chartEl.width = 300;
                 const config = {
-                    type: 'bar',
+                    type: 'line',
                     data: data,
                     options: {
                         plugins: {
