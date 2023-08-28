@@ -7,7 +7,7 @@
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 <?php 
 require_once 'setup.php';
-$sql = "SELECT * FROM pages where id = 1";
+$sql = "SELECT * FROM pages";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);

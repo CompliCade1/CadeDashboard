@@ -4,38 +4,7 @@
 <title>Monitoring Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
-<style>
-div.gallery {
-  margin: 8px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-  flex:30%;
-}
-//div.header {
-    border-top-style: none;
-    border-bottom-style: none;
-    border-left-style: solid;
-    border-right-style: solid;
-    border-width: 4px;
-    border-color: #FFFFFF;
-    }
-div.gallery img:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 10px;
-  text-align: center;
-  font-size:80%;
-  word-wrap: break-word;
-}
-</style>
+<link href="css/gallerystyle.css" rel="stylesheet" type="text/css">
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -47,32 +16,32 @@ div.desc {
 <div class="row">
     <div class="gallery">
   <a target="_blank" href="https://hub.esphq.com/login">
-    <img src="images/esp.nz.png" alt="ESP.nz" width="600" height="400">
+    <img src="getImage.php?id=1" alt="ESP.nz" width="600" height="400">
   </a>
   <div class="desc"><b>
       ESP.nz (Electricity + Water Usage)</b></div>
 </div>
     <div class="gallery">
   <a target="_blank" href="https://www.semsportal.com/home/login">
-    <img src="images/goodwe.png" alt="Goodwe" width="600" height="400">
+    <img src="getImage.php?id=2" alt="Goodwe" width="600" height="400">
   </a>
         <div class="desc"><b>Goodwe (Solar Power Generation)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
-    <img src="images/trinabess.png" alt="Trinabess" width="600" height="400">
+    <img src="getImage.php?id=3" alt="Trinabess" width="600" height="400">
   </a>
             <div class="desc"><b>Trinabess (South Solar Power Generation)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
-    <img src="images/trinabess2.png" alt="Trinabess" width="600" height="400">
+    <img src="getImage.php?id=4" alt="Trinabess" width="600" height="400">
   </a>
             <div class="desc"><b>Trinabess (North Solar Power Generation)</b></div>
 </div>
         <div class="gallery">
-  <a target="_blank" href="https://www.apsystemsema.com/ema/index.action?locale=en_US">
-    <img src="images/apsystems.png" alt="Apsystems" width="600" height="400">
+  <a target="_blank" href=https://www.apsystemsema.com/ema/intoDemoUser.action?id=0b2848875901cacc0159089d04e11447&locale=en_US>
+    <img src="getImage.php?id=5" alt="Apsystems" width="600" height="400">
   </a>
             <div class="desc"><b>Apsystems (Solar Power Generation)</b></div>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Monitoring Website-Contact</title>
+<title>Monitoring Website-Admin</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@
 <div class="wrapper">
 <?php include 'navbar.php';?>  
 <div class="header">
-<h1>Contact Page</h1>
+<h1>Admin Page</h1>
 </div>
 <div>
 <?php  require_once 'setup.php';
