@@ -22,7 +22,7 @@ mysqli_close($conn);
                         data: {
                             labels: dateData,
                             datasets: [{
-                                label: 'Dates Values',
+                                label: 'Electricity Usage',
                                 data: kWhData,
                                 borderColor: 'blue',
                                 borderWidth: 2,

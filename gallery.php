@@ -11,7 +11,7 @@
 <div class="wrapper">
 <?php include 'navbar.php';?>
 <div class="header">
-<h1>Dashboard Gallery Page</h1>
+<h1>Monitoring</h1>
 </div>
 <div class="row">
     <div class="gallery">
