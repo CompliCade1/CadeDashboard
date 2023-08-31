@@ -2,8 +2,7 @@ div.gallery {
   margin: 8px;
   border: 1px solid #000000;
   float: left;
-  width: 180px;
-  flex:30%;
+  width: 30%;
 }
 /*div.header {
     border-top-style: none;
@@ -17,9 +16,9 @@ div.gallery img:hover {
 }
 
 div.gallery img {
-  width: 95%;
+  width: 100%;
   height: auto;
-  margin: 2px;
+  margin: 0px;
 }
 
 div.desc {
@@ -28,4 +27,9 @@ div.desc {
   font-size:80%;
   word-wrap: break-word;
   background-color: #ffffff;
+}
+.btn {
+  text-decoration: none;
+  padding: 0.5rem;
+  border: 1px solid #333333;
 }
