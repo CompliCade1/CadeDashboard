@@ -21,8 +21,11 @@
     </div>
     <div class = "main">
         <a target = "_blank" href="https://docs.google.com/document/d/1EXHkPyW7GP1wlr9XMEIlj_wwrHK0MpUo/edit?usp=sharing&ouid=110318059403209332591&rtpof=true&sd=true">
-            <button>Improvements</button>
+            <button>Progress Tracker</button>
         </a>
+        <!--<a target = "_blank" href="usernamesdoc">
+            <button>Usernames</button>
+        </a>-->
     </div>
 </div>
 <div class="row">
@@ -41,15 +44,15 @@
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
-    <img src="getImage.php?id=3" alt="Trinabess" width="600" height="400">
+    <img src="getImage.php?id=3" alt="Trinabess SE" width="600" height="400">
   </a>
-            <div class="desc"><b>Solar Power (South Side Auditorium)</b></div>
+            <div class="desc"><b>Solar Power (South East Side Auditorium)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href="http://cloud.trinabess.com/TrinabestAgent/login.html">
-    <img src="getImage.php?id=4" alt="Trinabess" width="600" height="400">
+    <img src="getImage.php?id=4" alt="Trinabess NE" width="600" height="400">
   </a>
-            <div class="desc"><b>Solar Power (North Side Auditorium)</b></div>
+            <div class="desc"><b>Solar Power (North East Side Auditorium)</b></div>
 </div>
         <div class="gallery">
   <a target="_blank" href=https://www.apsystemsema.com/ema/intoDemoUser.action?id=0b2848875901cacc0159089d04e11447&locale=en_US>
@@ -70,10 +73,10 @@
             <div class="desc"><b>Error Reader for Heat Pumps</b></div>
 </div>
 <div class="gallery">
-  <a target="_blank" href=electricity.php>
-    <img src="getImage.php?id=6" alt="Electricity Usage" width="600" height="400">
+  <a target="_blank" href=https://www.wunderground.com/dashboard/pws/IWHAKATA18/graph/2021-09-1/2021-09-1/daily>
+    <img src="images/wunderground.png" alt="Wunderground Weather" width="600" height="400">
   </a>
-            <div class="desc"><b>Electricity Usage</b></div>
+            <div class="desc"><b>Trident Weather Station</b></div>
 </div>
 </div>
 <div class="footer">

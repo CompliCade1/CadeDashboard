@@ -1,8 +1,22 @@
+div {
+  /*align-items: center;*/
+  justify-content: center;
+}
+div.side {
+  align-items: center;
+  justify-content: center;
+}
+div.main {
+  align-items: center;
+  justify-content: center;
+}
 div.gallery {
   margin: 8px;
   border: 1px solid #000000;
-  float: left;
+  background-color: #ffffff;
+  /*float: left;*/
   width: 30%;
+  flex 30%;
 }
 /*div.header {
     border-top-style: none;
@@ -14,22 +28,39 @@ div.gallery {
 div.gallery img:hover {
   border: 1px solid #ffffff;
 }
-
 div.gallery img {
   width: 100%;
   height: auto;
   margin: 0px;
 }
-
 div.desc {
   padding: 10px;
   text-align: center;
   font-size:80%;
   word-wrap: break-word;
   background-color: #ffffff;
+  border-top-style: solid;
+  border-color: #000000;
 }
-.btn {
-  text-decoration: none;
-  padding: 0.5rem;
-  border: 1px solid #333333;
+/*
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
