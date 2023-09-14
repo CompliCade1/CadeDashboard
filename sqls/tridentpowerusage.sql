@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 06, 2023 at 12:02 AM
+-- Generation Time: Sep 14, 2023 at 06:09 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -20,6 +20,32 @@ SET time_zone = "+00:00";
 --
 -- Database: `tridentpowerusage`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `accounts`
+--
+
+CREATE TABLE `accounts` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `activation_code` varchar(50) DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `accounts`
+--
+
+INSERT INTO `accounts` (`id`, `username`, `password`, `email`, `activation_code`) VALUES
+(1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', ''),
+(2, 'test1', '$2y$10$g1FNhaHRkM/2nFLfA7XDge0XKgkxY3pjTNsEVGAiCxuOpX8pjufl6', 'test1@mail.com', ''),
+(3, 'teest', '$2y$10$t9SRdIYnzdIz7gL2VwubQ.3i8GEFNutR5gT/clGAtlqi7C0zFsFpO', 'teest@mail.com', ''),
+(4, 'test2', '$2y$10$4Ya0Mxkd7q87nO7k.F4nGeRzGj0mvu3356ES1yrN0FuSZw7/OXnWO', 'test2@mail.com', '650103ee785f4'),
+(5, 'test3', '$2y$10$61r1UxeFB1cvhrAWB34aWuft2cRljqzYYlHrFXWx142ME3ok/L7M.', 'cade20247@student.trident.school.nz', '6501042d4a38e'),
+(6, 'test4', '$2y$10$E3DlDT8YEDHsvRLQqAcHAut.l8RMBKvhKJ8.IpWWuArW3w4E7zRnG', 'test4@mail.com', '650104df1b751');
 
 -- --------------------------------------------------------
 
@@ -44,6 +70,29 @@ INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES
 (7, 'Cade', 'name', 'email', 'cacafa'),
 (12, 'Jenny', 'Patrick', 'jenny@mail.com', 'this is a test'),
 (19, 'Cade', 'Jeff', 'Jeff@mail.com', 'This is a commment');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `core`
+--
+
+CREATE TABLE `core` (
+  `core_id` int(11) NOT NULL,
+  `surname` varchar(50) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `ph` varchar(20) NOT NULL,
+  `ad1` varchar(50) NOT NULL,
+  `ad2` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `core`
+--
+
+INSERT INTO `core` (`core_id`, `surname`, `firstname`, `ph`, `ad1`, `ad2`) VALUES
+(170001, 'Olive', 'Grant', '0201234567', '62 Smith Road', 'Warkworth'),
+(170002, 'Bounty', 'William', '0221234567', '23 Omaha Valley Rd', 'Warkworth');
 
 -- --------------------------------------------------------
 
@@ -357,27 +406,88 @@ INSERT INTO `monthlysolar` (`id`, `date`, `kWh`) VALUES
 
 CREATE TABLE `pages` (
   `id` int(11) NOT NULL,
-  `title1` varchar(100) NOT NULL,
-  `text1` text NOT NULL,
-  `img1` varchar(50) NOT NULL
+  `title` varchar(100) NOT NULL,
+  `text` text NOT NULL,
+  `img` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `pages`
 --
 
-INSERT INTO `pages` (`id`, `title1`, `text1`, `img1`) VALUES
-(1, 'welcome to this dashboard', 'here you can find info about Trident’s power usage', 'graphimage3.png');
+INSERT INTO `pages` (`id`, `title`, `text`, `img`) VALUES
+(1, 'This is an explanation of Trident’s sustainability improvements made since 2012', 'Here you can find info about Trident’s power usage', 'graphimage3.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `results`
+--
+
+CREATE TABLE `results` (
+  `results_id` int(11) NOT NULL,
+  `standard_id` int(11) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `core_id` int(11) NOT NULL,
+  `result` varchar(1) NOT NULL,
+  `Date` date DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `results`
+--
+
+INSERT INTO `results` (`results_id`, `standard_id`, `title`, `core_id`, `result`, `Date`) VALUES
+(1, 91900, 'Inquiry', 170001, 'N', '2022-02-09'),
+(2, 91902, 'Internal', 170001, 'A', '2022-02-09'),
+(3, 91903, 'internal', 170001, 'M', '2022-02-09'),
+(4, 91909, 'external', 170001, 'E', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `standards`
+--
+
+CREATE TABLE `standards` (
+  `standard_id` int(11) NOT NULL,
+  `title` text NOT NULL,
+  `version` int(11) NOT NULL,
+  `extra` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `standards`
+--
+
+INSERT INTO `standards` (`standard_id`, `title`, `version`, `extra`) VALUES
+(91900, 'Inquiry', 1, 1),
+(91902, 'Create a Database', 1, 1),
+(91903, 'Create A website', 1, 1),
+(91909, 'Present a reflective analysis of developing a digital outcome', 1, 1);
 
 --
 -- Indexes for dumped tables
 --
 
 --
+-- Indexes for table `accounts`
+--
+ALTER TABLE `accounts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `core`
+--
+ALTER TABLE `core`
+  ADD PRIMARY KEY (`core_id`),
+  ADD KEY `core_id` (`core_id`);
 
 --
 -- Indexes for table `electricitydata`
@@ -416,14 +526,43 @@ ALTER TABLE `pages`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `results`
+--
+ALTER TABLE `results`
+  ADD PRIMARY KEY (`results_id`),
+  ADD KEY `result` (`result`),
+  ADD KEY `standard_id` (`standard_id`),
+  ADD KEY `results_id` (`results_id`),
+  ADD KEY `core_id` (`core_id`);
+
+--
+-- Indexes for table `standards`
+--
+ALTER TABLE `standards`
+  ADD PRIMARY KEY (`standard_id`),
+  ADD KEY `standard_id` (`standard_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `accounts`
+--
+ALTER TABLE `accounts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `core`
+--
+ALTER TABLE `core`
+  MODIFY `core_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170003;
 
 --
 -- AUTO_INCREMENT for table `electricitydata`
@@ -460,6 +599,23 @@ ALTER TABLE `monthlysolar`
 --
 ALTER TABLE `pages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `results`
+--
+ALTER TABLE `results`
+  MODIFY `results_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `results`
+--
+ALTER TABLE `results`
+  ADD CONSTRAINT `results_ibfk_1` FOREIGN KEY (`standard_id`) REFERENCES `standards` (`standard_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `results_ibfk_2` FOREIGN KEY (`core_id`) REFERENCES `core` (`core_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

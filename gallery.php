@@ -75,6 +75,12 @@
   </a>
             <div class="desc"><b>Electricity Usage</b></div>
 </div>
+<div class="gallery">
+  <a target="_blank" href=electricity.php>
+    <img src="getImage.php?id=6" alt="Solar Power Generation" width="600" height="400">
+  </a>
+            <div class="desc"><b>Solar Power Generation</b></div>
+</div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>

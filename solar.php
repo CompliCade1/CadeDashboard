@@ -30,7 +30,7 @@ mysqli_close($conn);
 <div class="wrapper">
 <?php include 'navbar.php';?>
 <div class="header">
-<h1>Electricity Usage</h1>
+<h1>Solar Power Generation</h1>
 </div>
 <div class="row">
     <div class="side">
@@ -43,7 +43,7 @@ mysqli_close($conn);
  <script>
         // Function to fetch data from PHP script
         function fetchData() {
-            fetch('fetch_data.php')
+            fetch('fetch_solar.php')
                 .then(response => response.json())
                 .then(data => {
                     const dateData = data.map(item => item.date);
@@ -55,7 +55,7 @@ mysqli_close($conn);
                         data: {
                             labels: dateData,
                             datasets: [{
-                                label: 'Electricity Usage',
+                                label: 'Solar Power Generation (kWh)',
                                 data: kWhData,
                                 borderColor: 'blue',
                                 borderWidth: 2,
@@ -73,7 +73,7 @@ mysqli_close($conn);
                                 y: {
                                     title: {
                                         display: true,
-                                        text: 'kWh Usage'
+                                        text: 'kWh Generation'
                                     }
                                 }
                             }

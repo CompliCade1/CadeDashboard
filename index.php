@@ -11,25 +11,29 @@ $sql = "SELECT * FROM pages";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_assoc($result);
-    $title1 = $row['title1'];
-    $text1 = $row['text1'];
-    $img1 = $row['img1'];
+    $title = $row['title'];
+    $text = $row['text'];
+    $img = $row['img'];
 }
     ?>
 </head>
 <body>
 <div class="wrapper">
+<div class="title">
+<h1>Trident High School</h1>
+</div>
+<?php include 'fakenavbar.php';?>
 <?php include 'navbar.php';?>
 <div class="header">
 <h1>Sustainability</h1>
 </div>
 <div class="row">
     <div class="side">
-        <p><img src = "images/<?php print $img1; ?>"></p>
+        <p><img src = "images/<?php print $img; ?>"></p>
     </div>
     <div class="main">
-        <h2><?php print $title1; ?></h2>
-        <p><?php print $text1; ?></p>
+        <h2><?php print $title; ?></h2>
+        <p><?php print $text; ?></p>
     </div>
 </div>
 <div class="end">
