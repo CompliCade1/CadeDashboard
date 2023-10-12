@@ -3,5 +3,9 @@
     <a href="gallery.php">Monitoring</a>
     <a href="contact.php">Contact Me</a>
     <a href="admin.php">Admin</a>
-    <a href="login.php">Login</a>
+    <?php if ($_SESSION['loggedin'] == FALSE){
+    echo "<a href='login.php'>Login</a>";
+}
+    else{
+        echo "<a href='logout.php'>Logout</a>";};?>
 </div>

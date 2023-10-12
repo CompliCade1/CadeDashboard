@@ -4,8 +4,8 @@
 <title>Monitoring Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
-<link href="css/gallerystyle.css" rel="stylesheet" type="text/css">
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
+<link href="css/gallerystyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="wrapper">
@@ -26,13 +26,28 @@
     </div>
 </div>
 <div class="row">
+<?php  require_once 'setup.php';
+$sql = "SELECT * FROM links";
+$stmt = mysqli_prepare($conn, $sql);
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
+if (mysqli_num_rows($result) > 0) {
+     while($row = $result->fetch_assoc()) {
+         $link = $row['link'];
+         $altimg = $row['altimg'];
+         $desc = $row['description'];
+         $image = $row['image'];
+?>
     <div class="gallery">
-  <a target="_blank" href="https://hub.esphq.com/login">
-    <img src="getImage.php?id=1" alt="ESP.nz" width="600" height="400">
+  <a target="_blank" href="<?php echo $link;?>">
+    <img src="images/<?php echo $image;?>" alt="<?php echo $altimg;?>" width="90%">
   </a>
   <div class="desc"><b>
-      Electricity + Water Usage</b></div>
+      <?php echo $desc;?></b></div>
 </div>
+    <?php
+     }}
+?>
     <div class="gallery">
   <a target="_blank" href="https://www.semsportal.com/home/login">
     <img src="getImage.php?id=2" alt="Goodwe" width="600" height="400">

@@ -25,19 +25,8 @@ if(isset($_GET['id'])) {
         $row = mysqli_fetch_assoc($result);
         // Display the edit form with the existing record's data
 ?>
-<form method="post" action="update.php">
-<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-<label for="fname">First Name:</label>
-<input type="text" id="fname" name="fname" value="<?php echo $row['fname']; ?>"><br><br>
-<label for="lname">Last Name:</label>
-<input type="text" id="lname" name="lname" value="<?php echo $row['lname']; ?>"><br><br>
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" value="<?php echo $row['email']; ?>"><br><br>
-<label for="comment">Comment:</label>
-<textarea id="comment" name="comment"><?php echo $row['comment']; ?></textarea><br><br>
-<input type="submit" value="Update">
-</form>
-
+<div class="row">
+</div>
 <div class="footer">
     <?php include 'footer.php';?>
 </div>

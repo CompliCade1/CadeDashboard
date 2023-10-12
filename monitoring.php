@@ -4,8 +4,8 @@
 <title>Monitoring Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=a">
-<link href="css/gallerystyle.css" rel="stylesheet" type="text/css">
 <link href="css/fixedstyle.css" rel="stylesheet" type="text/css">
+<link href="css/gallerystyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="wrapper">
@@ -17,6 +17,9 @@
 <h1>Monitoring</h1>
 </div>
     <div class = button>
+        <a target = "_blank" href="https://www.trident.school.nz/sustainability-at-trident">
+        Sustainability
+        </a>
         <a target = "_blank" href="images/sustanabilityhelpers.png">
         Sponsers
         </a>

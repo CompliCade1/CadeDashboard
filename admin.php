@@ -1,5 +1,10 @@
 <?php  ini_set('display_errors', 1);
-error_reporting(~0); ?>
+error_reporting(~0);
+session_start();
+if ($_SESSION['loggedin'] == FALSE or $_SESSION['id'] > 1){
+    header('Location: login.php');
+};?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +53,7 @@ if (mysqli_num_rows($result) > 0) {
         echo '<td>' . $row['lname'] . '</td>';
         echo '<td>' . $row['email'] . '</td>';
         echo '<td>' . $row['comment'] . '</td>';
-        //echo '<td><a href="edit.php?id=' . $row['id'] . ' ">Edit</a> | <a href="delete.php?id=' . $row['id'] .'”>Delete</a></td>';
+        echo '<td><a href="edit.php?id=' . $row['id'] . ' ">Edit</a> | <a href="delete.php?id=' . $row['id'] .'">Delete</a></td>';
         echo '</tr>';
         }
     echo '</table>';

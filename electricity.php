@@ -33,9 +33,6 @@ mysqli_close($conn);
 <h1>Electricity Usage</h1>
 </div>
 <div class="row">
-    <div class="side">
-        <p>..</p>
-    </div>
     <div class="main">
         <div style="width: 80%; margin: auto;">
         <canvas id="lineChart"></canvas>
@@ -85,6 +82,7 @@ mysqli_close($conn);
         // Call the fetchData function when the page loads
         window.onload = fetchData;
     </script>
+    <p>This shows elecitricty usage. </p>
     </div>
 </div>
 <div class="footer">
