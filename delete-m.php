@@ -22,7 +22,7 @@ if ($_SESSION['loggedin'] == FALSE or $_SESSION['id'] > 1){
 require_once 'setup.php';
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "DELETE FROM contacts WHERE id=$id";
+    $sql = "DELETE FROM links WHERE id=$id";
     echo $id;
 }
 else {
@@ -41,5 +41,5 @@ echo $id;
 </html>
 <?php
 mysqli_close($conn);
-header('Location: admin.php');
+header('Location: admin-m.php');
 ?>

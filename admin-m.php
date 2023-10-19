@@ -35,25 +35,28 @@ if ($_SESSION['loggedin'] == FALSE or $_SESSION['id'] > 1){
 </div>
 <div>
 <?php  require_once 'setup.php';
-$sql = "SELECT * FROM contacts";
+$sql = "SELECT * FROM links";
 $stmt = mysqli_prepare($conn, $sql);
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
 if (mysqli_num_rows($result) > 0) {
     echo '<table>';
     //print ($sql);
-    echo '<tr><th>First Name</th><th>Last Name</th><th>Email</th><th>Comment</th><th>Actions</th></tr>';
+    echo '<tr><th>Link</th><th>Description</th><th>Image</th><th>AltName</th><th>Actions</th></tr>';
     
     while($row = $result->fetch_assoc()) {
         //print_r ($row);
         echo '<tr>';
-        echo '<td>' . $row['fname'] . '</td>';
-        echo '<td>' . $row['lname'] . '</td>';
-        echo '<td>' . $row['email'] . '</td>';
-        echo '<td>' . $row['comment'] . '</td>';
-        echo '<td><a href="edit.php?id=' . $row['id'] . ' ">Edit</a> | <a href="delete.php?id=' . $row['id'] .'">Delete</a></td>';
+        echo '<td>' . $row['link'] . '</td>';
+        echo '<td>' . $row['description'] . '</td>';
+        echo '<td>' . $row['image'] . '</td>';
+        echo '<td>' . $row['altimg'] . '</td>';
+        echo '<td><a href="edit-m.php?id=' . $row['id'] . ' ">Edit</a> | <a href="delete-m.php?id=' . $row['id'] .'">Delete</a></td>';
         echo '</tr>';
         }
+    echo '<tr>';
+    echo '<td><a href="addlink.php">Add Page</a></td>';
+    echo '</tr>';
     echo '</table>';
      } 
 else {

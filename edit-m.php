@@ -22,7 +22,7 @@ if ($_SESSION['loggedin'] == FALSE or $_SESSION['id'] > 1){
 require_once 'setup.php';
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
-    $query = "SELECT * FROM contacts WHERE id = ?";
+    $query = "SELECT * FROM links WHERE id = ?";
     $stmt = mysqli_prepare($conn, $query);
     mysqli_stmt_bind_param($stmt, "i", $id);
     mysqli_stmt_execute($stmt);
@@ -31,16 +31,16 @@ if(isset($_GET['id'])) {
         $row = mysqli_fetch_assoc($result);
         // Display the edit form with the existing record's data
 ?>
-<form method="post" action="update.php">
+<form method="post" action="update-m.php">
 <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-<label for="fname">First Name:</label>
-<input type="text" id="fname" name="fname" value="<?php echo $row['fname']; ?>"><br><br>
-<label for="lname">Last Name:</label>
-<input type="text" id="lname" name="lname" value="<?php echo $row['lname']; ?>"><br><br>
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" value="<?php echo $row['email']; ?>"><br><br>
-<label for="comment">Comment:</label>
-<textarea id="comment" name="comment"><?php echo $row['comment']; ?></textarea><br><br>
+<label for="link">Link:</label>
+<input type="text" id="link" name="link" value="<?php echo $row['link']; ?>"><br><br>
+<label for="link">Description:</label>
+<input type="text" id="description" name="description" value="<?php echo $row['description']; ?>"><br><br>
+<label for="image">Image:</label>
+<input type="text" id="image" name="image" value="<?php echo $row['image']; ?>"><br><br>
+<label for="altimg">Alt Name:</label>
+<textarea id="altimg" name="altimg"><?php echo $row['altimg']; ?></textarea><br><br>
 <input type="submit" value="Update">
 </form>
 

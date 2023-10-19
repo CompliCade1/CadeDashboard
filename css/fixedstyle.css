@@ -110,6 +110,20 @@ body {
 .end p{
     margin: 0;
 }
+table {
+    table-layout:fixed;
+}
+table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*word-wrap: break-word;*/
+}
+table td:hover {
+    overflow:visible;
+    white-space:normal;
+    word-wrap: break-word;
+}
 .footer {
     padding:20px 0px;
     width:100%;
@@ -127,7 +141,7 @@ body {
     background-color: #ddd;
     color: black;
     }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
   .row {   
     flex-direction: column;
   }
