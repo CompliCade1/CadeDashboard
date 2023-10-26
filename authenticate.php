@@ -37,7 +37,12 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['id'] = $id;
         
         echo $_SESSION['id'];
-		header('Location: admin.php');
+        if ($SESSION['id'] == 1){
+            header('Location: admin-m.php');
+        }
+        else {
+            header('Location: gallery.php');
+        }
 	} else {
 		// Incorrect password
 		echo 'Incorrect username and/or password!';

@@ -52,24 +52,6 @@ if (mysqli_num_rows($result) > 0) {
     <?php
      }}
 ?>
-        <div class="gallery">
-  <a target="_blank" href=http://172.16.8.254>
-    <img src="images/accontrol.png" alt="Heat Pumps">
-  </a>
-            <div class="desc"><b>Heat Pumps Controller</b></div>
-</div>
-        <div class="gallery">
-  <a target="_blank" href=http://drdaikin.com>
-    <img src="images/errorfixer.png" alt="Error Reader">
-  </a>
-            <div class="desc"><b>Error Reader for Heat Pumps</b></div>
-</div>
-<div class="gallery">
-  <a target="_blank" href=https://www.wunderground.com/dashboard/pws/IWHAKATA18/graph/2021-09-1/2021-09-1/daily>
-    <img src="images/wunderground.png" alt="Wunderground Weather">
-  </a>
-            <div class="desc"><b>Trident Weather Station</b></div>
-</div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>

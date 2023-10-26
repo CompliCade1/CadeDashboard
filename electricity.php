@@ -3,10 +3,7 @@
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: login.php');
-	exit;
-}
+
 ?>
 <html lang="en">
 <head>
@@ -91,8 +88,12 @@ mysqli_close($conn);
         // Call the fetchData function when the page loads
         window.onload = fetchData;
     </script>
-    <p>This shows elecitricty usage. </p>
     </div>
+</div>
+<div class = "row">
+    <div class = "main">
+    <p>This graph shows real electricity usage for all of Trident High School over the last year.</p>
+</div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>

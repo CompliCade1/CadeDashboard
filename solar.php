@@ -33,9 +33,6 @@ mysqli_close($conn);
 <h1>Solar Power Generation</h1>
 </div>
 <div class="row">
-    <div class="side">
-        <p>..</p>
-    </div>
     <div class="main">
         <div style="width: 80%; margin: auto;">
         <canvas id="lineChart"></canvas>
@@ -86,6 +83,11 @@ mysqli_close($conn);
         window.onload = fetchData;
     </script>
     </div>
+</div>
+<div class = "row">
+    <div class = "main">
+    <p>This graph shows real solar power generation at Trident High School's west side auditorium in the year 2021.</p>
+</div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>

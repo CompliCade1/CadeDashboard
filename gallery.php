@@ -1,5 +1,4 @@
-<?php  ini_set('display_errors', 1);
-error_reporting(~0);
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -29,6 +28,9 @@ session_start();
         </a>
     </div>
 </div>
+<div class = "row">
+    <p>Click on the images to view information about sustainability at Trident High School. Some of the images will lead you to others websites that will require a password and username to look at the infromation.</p>
+</div>
 <div class="row">
 <?php  require_once 'setup.php';
 $sql = "SELECT * FROM links";
@@ -45,7 +47,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
     <div class="gallery">
   <a target="_blank" href="<?php echo $link;?>">
-    <img src="getImage.php?id=<?php echo $id;?>" alt="<?php echo $altimg;?>" width="90%">
+    <img src="getImage.php?id=<?php echo $id;?>" alt="<?php echo $altimg;?>">
   </a>
   <div class="desc"><b>
       <?php echo $desc;?></b></div>
@@ -53,24 +55,6 @@ if (mysqli_num_rows($result) > 0) {
     <?php
      }}
 ?>
-        <div class="gallery">
-  <a target="_blank" href=http://172.16.8.254>
-    <img src="images/accontrol.png" alt="Heat Pumps" width="600" height="400">
-  </a>
-            <div class="desc"><b>Heat Pumps</b></div>
-</div>
-        <div class="gallery">
-  <a target="_blank" href=http://drdaikin.com>
-    <img src="images/errorfixer.png" alt="Error Reader" width="600" height="400">
-  </a>
-            <div class="desc"><b>Error Reader for Heat Pumps</b></div>
-</div>
-<div class="gallery">
-  <a target="_blank" href=electricity.php>
-    <img src="images/tridentelectricityusage.png" alt="Electricity Usage" width="600" height="400">
-  </a>
-            <div class="desc"><b>Electricity Usage</b></div>
-</div>
 </div>
 <div class="footer">
     <?php include 'footer.php';?>
